@@ -5,8 +5,8 @@ export const Header = () => {
   return (
     <header>
     
-        <a href="#" className="logo">VICTOR DURAN</a>
-        <a href="#" className="otro-logo">VD</a>
+        <a href="https://github.com/VICDUR/portfolio" target="_blank" rel="noopener noreferrer" className="logo">VICTOR DURAN</a>
+        <a href="https://github.com/VICDUR/portfolio" target="_blank" rel="noopener noreferrer" className="otro-logo">VD</a>
 
         <input type="checkbox" name="checkbox" id="menu-toggle"/>
         <label for="menu-toggle" className="menu-icon-action">
