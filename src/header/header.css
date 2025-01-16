@@ -1,0 +1,109 @@
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 15px 3%;
+    /* background-color: transparent; */
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+}
+
+.logo, .otro-logo {
+    font-size: 40px;
+    font-family: "VT323", monospace;
+}
+
+.otro-logo{
+    display: none;
+}
+
+.navlist{ 
+    display: flex;
+}
+
+.navlist a {
+    margin-left: 60px;
+    border-bottom: 2px solid transparent;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+
+.navlist a:hover{
+    border-bottom: 2px solid rgb(182, 182, 182);
+}
+
+#menu-icon{
+    display: none;
+}
+
+#menu-icon{
+    font-size: 35px;
+    z-index: 101;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon-action{
+    display: none;
+}
+
+
+@media( max-width:500px){
+
+    .logo{
+        display: none;
+    }
+    .otro-logo{
+        display: block;
+    }
+
+    .menu-icon-action{
+        display: block;
+    }
+    #menu-icon{
+        display: block;
+    }
+
+   #menu-toggle:checked + label.menu-icon-action + ul {
+    right: 0;
+   }
+}
+
+
+@media( max-width:500px){
+
+    .navlist{
+     /* display: none; */
+     position: absolute;
+     top: 100%;
+     right: -100%;
+     width: 200px;
+     height: 180px;
+     display: flex;
+     background-color: #041822;
+     flex-direction: column;
+     align-items: center;
+     padding: 30px 20px;
+     transition: all .5s ease-out;
+     border-radius: 0 0 20px 20px ;
+     background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+     opacity: 0.95;
+    }
+ 
+    .navlist a {
+     display: block;
+     margin: 7px 0;
+    }
+ 
+    #menu-toggle:checked + label.menu-icon-action + ul {
+     right: 0;
+    }
+ }

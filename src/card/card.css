@@ -1,0 +1,128 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30vh;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgba(218, 200, 200, 0.164);
+    margin: 10 10px;
+    box-shadow: 9px 12px 9px -9px rgba(179, 180, 176, 0.634);
+    -webkit-box-shadow: 9px 12px 9px -9px rgba(242,245,230,0.77);
+    -moz-box-shadow: 9px 12px 9px -9px rgba(242,245,230,0.77);
+    scale: 1;
+
+    animation: card-animation ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;   
+}
+
+
+
+@keyframes card-animation {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+    to {
+        opacity: 100%;
+        /* translate: 0 0; */
+        scale: 1;
+    }
+}
+
+.card-container:hover {
+    scale: 2.2;
+    translate: 0 -1px;
+    border: 1px solid white;
+   }
+
+a{
+    display: block;
+    margin: 8px 0;
+    margin-left: 24px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 90%;
+}
+
+.icons-card {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    position: absolute; 
+    bottom: 1%; 
+    left: 0;
+    right: 0;
+}
+
+
+.img-github, .img-web{
+    width: 28px;
+}
+
+.icons-card a{
+    display: inline-block;
+     margin: 0 4px;
+}
+
+
+p{
+    text-align: justify;
+    margin: 0 24px;
+    padding:  10px 0 ;
+    color: burlywood;
+    font-size: 12px;
+
+}
+
+
+
+@media(max-width:1920px){
+    .card-container {
+        width: 33vh;
+        height: 550px;
+        animation-range: entry 20% cover 40%;   
+    }
+}
+
+
+
+
+
+@media(max-width:1440px){
+    .card-container {
+        width: 40vh;
+        height: 520px;
+      
+    }
+}
+
+@media(max-width:1024px){
+    .card-container {
+        width: 35vh;
+        height: 520px;
+      
+    }
+}
+
+
+@media(max-width:768px){
+    .card-container {
+        width: 34vh;
+        height: 520px;
+      
+    }
+}
+
+@media(max-width:500px){
+    .card-container {
+        width: 38vh;
+        height: 520px;
+        animation-range: entry 15% cover 30%;   
+    }
+}

@@ -1,0 +1,16 @@
+/* .text-show {
+    font-size: 2rem;
+    color: #2c3e50;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #2c3e50;
+    display: inline-block;
+} */
+
+
+@media( max-width:500px){
+    .text-show h1 {
+        position: relative;
+        top: -370px;
+    }
+}

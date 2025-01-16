@@ -1,0 +1,67 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Dependencias de package-lock
+package-lock.json
+yarn.lock
+
+# Archivos de configuración del editor (Visual Studio Code, Sublime, etc.)
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Archivos de configuración de OS (macOS, Windows, Linux)
+.DS_Store
+Thumbs.db
+*.swp
+
+# Archivos de salida y compilados
+dist/
+build/
+out/
+*.log
+*.bak
+*.tmp
+
+# Archivos generados por el entorno
+.env
+.env.local
+.env.*.local
+*.env
+
+# Archivos de bases de datos locales
+*.sqlite
+*.db
+
+# Archivos temporales y de caché de sistemas operativos y editores
+*.pid
+*.seed
+*.pid.lock
+
+# Ignorar imágenes
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Ignorar archivos PDF
+*.pdf
+
+# Ignorar el directorio 'packgit'
+packgit/
+
+# Archivos de respaldo (por ejemplo, de editores de texto)
+*~
+*.bak
+
+# Archivos específicos de OS (Windows)
+Thumbs.db
+Desktop.ini
