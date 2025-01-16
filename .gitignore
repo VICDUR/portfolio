@@ -65,3 +65,6 @@ packgit/
 # Archivos específicos de OS (Windows)
 Thumbs.db
 Desktop.ini
+
+
+/build/
